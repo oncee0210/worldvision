@@ -2,7 +2,7 @@ import { stageStart } from './module/stageStart.js';
 import { moveLink } from './module/link.js';
 import { initStep, nextStep } from './module/step.js';
 import { dialog } from './module/dialog.js';
-import { getItem, viewItem, closeItem } from './module/item.js';
+import { getItem, viewItem, closeItem, removeItem } from './module/item.js';
 import { viewInfo, closeInfo } from './module/infoPopup.js';
 import { viewQuiz, closeQuiz, checkQuiz, closeQuiz_y, closeQuiz_n } from './module/quizPopup.js';
 
@@ -39,6 +39,10 @@ window.onload = function() {
     if(stage == 'stage-3' && step == 'step-8'){
       getItem('boat');
     }
+
+    if(stage == 'stage-4' && step == 'step-5'){
+      removeItem('muac')
+    }
   });
 
   initStep();
@@ -60,6 +64,8 @@ window.onload = function() {
       }
     } else if(stage == "stage-2" && step == "step-5") {
       viewInfo("stage-2", "step-5");
+    } else if(stage == "stage-4" && step == "step-5") {
+      step = nextStep("stage-4", "step-5");
     }
   });
 
@@ -77,8 +83,15 @@ window.onload = function() {
       if(itemId == 'boat') {
         $("#item-pop .item-pop-inner").append(`<button type="button" class="btn1 item-pop-button info-btn">아이템 사용하기</button>`);
       }
+    } else if(stage == "stage-4" && step == "step-4") {
+      if(itemId == 'muac') {
+        $("#item-pop .item-pop-inner").append(`<button type="button" class="btn1 item-pop-button info-btn">아이템 사용하기</button>`);
+      }
+    } else if(stage == "stage-4" && step == "step-6") {
+      if(itemId == 'babyfood') {
+        $("#item-pop .item-pop-inner").append(`<button type="button" class="btn1 item-pop-button info-btn">아이템 사용하기</button>`);
+      }
     }
-
   });
 
   const infoViewBtn = '.info-btn';
@@ -101,6 +114,12 @@ window.onload = function() {
     } else if(stage == "stage-3" && step == "step-3") {
       $(".info-pop-button").trigger('click');
     } else if(stage == "stage-3" && step == "step-7") {
+      $(".info-pop-button").trigger('click');
+    } else if(stage == "stage-3" && step == "step-15") {
+      $(".info-pop-button").trigger('click');
+    } else if(stage == "stage-4" && step == "step-4") {
+      $(".info-pop-button").trigger('click');
+    } else if(stage == "stage-4" && step == "step-6") {
       $(".info-pop-button").trigger('click');
     } else {
       closeInfo();
@@ -162,7 +181,7 @@ window.onload = function() {
     $("#quiz-n-pop").hide();
   });
 
-  if(stage == 'stage-2' || stage == 'stage-3'){
+  if(stage == 'stage-2' || stage == 'stage-3' || stage == 'stage-4'){
     getItem('muac');
   }
 }

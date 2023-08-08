@@ -83,4 +83,18 @@ export const itemData = {
       }
     }
   },
+  'babyfood' : {
+    title : '바나나, 아보카도, 쌀',
+    expl : '바나나는 칼륨과 식이섬유소가 풍부하여 건강 과일로 불린다.<br/>아보카도는 비타민과 미네랄이 많은 건강 과일이다.<br/>쌀은 열량이 높고 소화 흡수가 가능한 전분이 풍부하다.',
+    img : {
+      inven : {
+        imgSize : [86, 76],
+        imgFile : '/img/inv-item-babyfood.png'
+      },
+      popup : {
+        imgSize : [606, 180],
+        imgFile : '/img/pop-item-babyfood.png'
+      }
+    }
+  },
 }

@@ -59,6 +59,26 @@ const infoPopData = {
       btn : `<button type="button" class="btn1 info-pop-button link-btn">이동하기</button>`
     }
   },
+  'stage-4' : {
+    'step-4' : {
+      title : `영양실조 진단 결과`,
+      expl : `진단 결과 빨간색이 나왔다. 아이가 영양실조입니다.<br/>부엌에 가서 영양실조를 개선할 수 있는 재료를 획득해 이유식을 만들자!`,
+      img : {
+        size : [181, 241],
+        imgFile : `/img/stage-4_step-4_info.jpg`
+      },
+      btn : `<button type="button" class="btn1 info-pop-button step-btn">이유식 만들기</button>`
+    },
+    'step-6' : {
+      title : `미션 완료!`,
+      expl : `다행이도 아이가 잘 먹는다. 아이의 영양상태가 개선되었다!<br/>Mission 해결 - 세번째 코드 확보 [ACTION]<br/>마을에 '10대 임산부'가 있진 않은지 둘러보자!`,
+      img : {
+        size : [],
+        imgFile : ``
+      },
+      btn : `<button type="button" class="btn1 info-pop-button link-btn">마을로 나가기</button>`
+    }
+  },
 }
 
 const infoPop = document.getElementById("info-pop");

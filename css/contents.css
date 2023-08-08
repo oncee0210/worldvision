@@ -36,6 +36,7 @@
 #item-muac {top: 373px; left: 599px; width: 43px; height: 24px;}
 #item-vest {top: 389px; left: 312px; width: 25px; height: 31px;}
 #item-hat {top: 404px; left: 666px; width: 43px; height: 26px;}
+#item-babyfood {top: 334px; left: 553px; width: 65px; height: 49px;}
 
 .pop-dim {position: absolute; top: 0; left: 0; z-index: 100; width: 100%; height: 100%; background: rgba(0,0,0,0.8); animation: fadeOut 1s ease 1s forwards;}
 .pop-contents {position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%);}
@@ -43,7 +44,7 @@
 .dialog{display: block; position:absolute; bottom:20px; left:20px; width: 1170px; border-radius: 20px; background:rgba(0,0,0,0.7);}
 .dialog-li {display: none;}
 .dialog-li:first-child {display: block;}
-.dialog-li.notice {height: 106px; padding: 40px 40px 0; text-align: center;}
+.dialog-li.notice {height: 106px; padding: 40px 0 0; text-align: center;}
 .dialog-li.talk {height: 228px; padding: 40px 40px 0; text-align: left;}
 .dialog_text-bold{font-size: 25px;  font-weight: 800;color: #fffbf7;}
 .dialog_text-small{margin-top: 26px; font-family: 'SpoqaHanSansNeo-Regular';font-size: 20px;line-height: 1.6;color: #fff;}
@@ -78,6 +79,9 @@
 #quiz-pop .quiz-pop-answer {display: flex; flex-flow: row wrap; justify-content: center; align-items: center; gap: 0 24px; margin-top: 24px;}
 #quiz-pop .quiz-pop-choice {display: flex; justify-content: center; align-items: center; text-align: center; width: 240px; height: 148px; border: 1px solid #fff; border-radius: 20px; line-height: 1.56; cursor: pointer;}
 #quiz-pop .quiz-pop-choice.on {background-color: rgba(255, 255, 255, 0.6);}
+#quiz-pop .quiz-input {width: 480px; height: 64px; margin: 0 auto; padding: 0 10px 0 32px; border-radius: 20px; border: solid 1px #fff; font-family: 'SpoqaHanSansNeo-Regular', sans-serif; font-size: 18px; color: #fff; background: none; outline: none;}
+#quiz-pop .quiz-input::placeholder {color: #fff;}
+#quiz-pop .quiz-input:focus::placeholder {font-size: 0;}
 #quiz-pop .quiz-pop-button {margin: 24px auto 0; background: #fff;}
 
 #quiz-y-pop {display: none; position: absolute; top: 0; left: 0; z-index: 100; width: 100%; height: 100%; background: rgba(0,0,0,0.8);}
@@ -196,7 +200,22 @@
 /* Stage 4 */
 #stage-4_start .pop-contents {width: 536px; height: 252px; background: url('/img/stage-4_start.png') no-repeat center/contain;}
 
-#stage-4 #step-0 {}
+#stage-4 #step-0 {background: url('/img/stage-3_step-0_bg.jpg') no-repeat center/contain;}
+#stage-4 #step-0 .step-btn {position: absolute; top: 40px; right: 635px; z-index: 5; width: 96px; height: 96px; background: url('/img/arrow-up.png') no-repeat center/contain;}
+
+#stage-4 #step-1 {background: url('/img/stage-4_step-1_bg.jpg') no-repeat center/contain;}
+#stage-4 #step-1 .step-btn {position: absolute; top: 295px; left: 259px; z-index: 5; width: 396px; height: 297px; background: url('/img/stage-4_step-1_step.png') no-repeat center/contain;}
+
+#stage-4 #step-2 {background: url('/img/stage-4_step-2_bg.jpg') no-repeat center/contain;}
+#stage-4 #step-2 .step-btn {position: absolute; top: 347px; left: 795px; z-index: 5; width: 40px; height: 85px; background: url('/img/stage-4_step-2_step.png') no-repeat center/contain;}
+
+#stage-4 #step-3 {background: url('/img/stage-4_step-3_bg.jpg') no-repeat center/contain;}
+
+#stage-4 #step-4 {background: url('/img/stage-4_step-4_bg.jpg') no-repeat center/contain;}
+
+#stage-4 #step-5 {background: url('/img/stage-4_step-5_bg.jpg') no-repeat center/contain;}
+
+#stage-4 #step-6 {background: url('/img/stage-4_step-6_bg.jpg') no-repeat center/contain;}
 
 /* Stage 5 */
 #stage-5_start .pop-contents {width: 536px; height: 252px; background: url('/img/stage-5_start.png') no-repeat center/contain;}

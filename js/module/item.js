@@ -1,15 +1,9 @@
 import { itemData } from './itemData.js';
 
-const inventory = [];
-const inventoryList = $(".inventory-item");
+let inventory = [];
+let inventoryList = $(".inventory-item");
 
-const getItem = (itemId, callback) => {  
-  if (inventory.includes(itemId)) {
-    return false;
-  }
-
-
-  inventory.push(itemId);
+const renderItem = () => {
   inventoryList.html('');
 
   inventory.map((item, index) => {
@@ -24,6 +18,15 @@ const getItem = (itemId, callback) => {
     </button>
     `);
   })
+}
+
+const getItem = (itemId, callback) => {  
+  if (inventory.includes(itemId)) {
+    return false;
+  }
+
+  inventory.push(itemId);
+  renderItem();
 
   if (callback && typeof callback === 'function') {
     callback();
@@ -67,9 +70,17 @@ const viewItem = (itemId) => {
   $itemPop.fadeIn(200);
 }
 
+const removeItem = () => {
+  inventory = inventory.filter(function(item) {
+    return item !== 'muac';
+  });
+
+  renderItem();
+}
+
 const closeItem = () => {
   $itemPop.fadeOut(200);
   itemPop.innerHTML = '';
 }
 
-export { getItem, viewItem, closeItem }
+export { getItem, viewItem, closeItem, removeItem }

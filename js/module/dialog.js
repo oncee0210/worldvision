@@ -218,6 +218,51 @@ const dialogData = {
       ]
 		},
 	},
+  'stage-4' : {
+		'step-2' : {
+			msg : [
+        {
+          type : 'notice',
+          text1 : '24개월 이전 영유아 가정에 방문했습니다. 힘이 없어 보이는 아이를 품에 안고 있는 엄마에게 말을 걸어 보세요.'
+        }
+      ]
+		},
+    'step-3' : {
+			msg : [
+        {
+          type : 'talk',
+          text1 : '[ 보건요원 ]',
+          text2 : '안녕하세요. 어머님. 아이가 많이 힘이 없어보여요.<br/>영양실조가 아닌지 의심돼요.<br/>MUAC테이프로 간단하게 영양실조 여부를 확인할 수 있어요.',
+          prev : ``,
+          next : `<button type="button" class="dialog-arrow-next step-btn">다음으로&nbsp;&nbsp;&gt;</button>`
+        },
+      ]
+		},
+    'step-4' : {
+			msg : [
+        {
+          type : 'notice',
+          text1 : 'MUAC테이프 아이템을 클릭해 아이의 영양실조 여부를 확인해 보세요.'
+        }
+      ]
+		},
+    'step-5' : {
+			msg : [
+        {
+          type : 'notice',
+          text1 : '영양실조를 개선할 수 있는 이유식 재료를 챙겨요. [바나나, 아보카도, 쌀]'
+        }
+      ]
+		},
+    'step-6' : {
+			msg : [
+        {
+          type : 'notice',
+          text1 : '이유식 재료 아이템을 클릭해서 아이에게 먹이자.'
+        }
+      ]
+		},
+  }
 }
 
 const dialogPrev = () => {
