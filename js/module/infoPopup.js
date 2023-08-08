@@ -79,6 +79,17 @@ const infoPopData = {
       btn : `<button type="button" class="btn1 info-pop-button link-btn">마을로 나가기</button>`
     }
   },
+  'stage-5' : {
+    'step-5' : {
+      title : `보건요원 미션 클리어`,
+      expl : `당신은 마을에서 도움이 필요한 사람들에게 모두 도움을 주었습니다.<br/>마지막으로 ‘CVA 활동장소’인 시청으로 가서<br/>우리 마을 문제에 대해 사람들과 이야기를 나눠보아요.`,
+      img : {
+        size : [],
+        imgFile : ``
+      },
+      btn : `<button type="button" class="btn1 info-pop-button link-btn">마을로 나가기</button>`
+    }
+  },
 }
 
 const infoPop = document.getElementById("info-pop");

@@ -220,7 +220,22 @@
 /* Stage 5 */
 #stage-5_start .pop-contents {width: 536px; height: 252px; background: url('/img/stage-5_start.png') no-repeat center/contain;}
 
-#stage-5 #step-0 {}
+#stage-5 #step-0 {background: url('/img/stage-5_step-0_bg.jpg') no-repeat center/contain;}
+#stage-5 #step-0 .step-btn {position: absolute; top: 249px; left: 815px; z-index: 5; width: 44px; height: 88px; background: url('/img/stage-5_step-0_step.png') no-repeat center/contain;}
+
+#stage-5 #step-1 {background: url('/img/stage-5_step-1_bg.jpg') no-repeat center/contain;}
+
+#stage-5 #step-2 {background: url('/img/stage-5_step-2_bg.jpg') no-repeat center/contain;}
+#stage-5 #step-2 .step-btn {position: absolute; top: 336px; right: 196px; z-index: 5; width: 96px; height: 96px; background: url('/img/arrow-right.png') no-repeat center/contain;}
+
+#stage-5 #step-3 {background: url('/img/stage-5_step-3_bg.jpg') no-repeat center/contain;}
+#stage-5 #step-3 .step-btn {position: absolute; top: 254px; left: 697px; z-index: 5; width: 268px; height: 289px; background: url('/img/stage-5_step-3_step.png') no-repeat center/contain;}
+
+
+#stage-5 #step-4 {background: url('/img/stage-5_step-4_bg.jpg') no-repeat center/contain;}
+#stage-5 #step-4 .step-btn {position: absolute; top: 404px; left: 537px; z-index: 5; width: 37px; height: 82px; background: url('/img/stage-5_step-4_step.png') no-repeat center/contain;}
+
+#stage-5 #step-5 {background: url('/img/stage-5_step-5_bg.jpg') no-repeat center/contain;}
 
 /* Stage 6 */
 #stage-6_start .pop-contents {width: 536px; height: 252px; background: url('/img/stage-6_start.png') no-repeat center/contain;}

@@ -121,6 +121,8 @@ window.onload = function() {
       $(".info-pop-button").trigger('click');
     } else if(stage == "stage-4" && step == "step-6") {
       $(".info-pop-button").trigger('click');
+    } else if(stage == "stage-5" && step == "step-5") {
+      $(".info-pop-button").trigger('click');
     } else {
       closeInfo();
     }
@@ -160,6 +162,8 @@ window.onload = function() {
   const quizCloseBtn_y = '#quiz-y-pop .quiz-pop-cancel';
   container.on('click', quizCloseBtn_y, function(){
     if(stage == "stage-3" && step == "step-7") {
+      $("#quiz-y-pop .quiz-pop-button").trigger('click');
+    } else if(stage == "stage-5" && step == "step-1") {
       $("#quiz-y-pop .quiz-pop-button").trigger('click');
     } else {
       closeQuiz_y();

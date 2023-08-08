@@ -46,6 +46,24 @@ const quizPopData = {
         btn : `<button type="button" class="btn1 quiz-pop-button info-btn">보트바우처 받기</button>`
       }
     },
+  },
+  'stage-5' : {
+    'step-1' : {
+      title : `문제. 이 청소년이 가야할 곳은?`,
+      expl : `청소년 친화 보건시설의 약자`,
+      type : 'multiple',
+      answer : [
+        'AFET',
+        'AEHF',
+        'AFHF'
+      ],
+      correct : 3,
+      btn : `<button type="button" class="btn1 quiz-pop-button quiz-check-btn">정답 제출하기</button>`,
+      check : {
+        expl : `소녀와 함께 ‘청소년 친화 보건시설’로 이동하자!<br/>마을에서 청소년 친화 보건시설[AFHF]을 찾아보세요.`,
+        btn : `<button type="button" class="btn1 quiz-pop-button step-btn">마을로 돌아가기</button>`
+      }
+    },
   }
 }
 
