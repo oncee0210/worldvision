@@ -100,6 +100,8 @@ window.onload = function() {
       $(".info-pop-button").trigger('click');
     } else if(stage == "stage-3" && step == "step-3") {
       $(".info-pop-button").trigger('click');
+    } else if(stage == "stage-3" && step == "step-7") {
+      $(".info-pop-button").trigger('click');
     } else {
       closeInfo();
     }
@@ -137,10 +139,22 @@ window.onload = function() {
   container.on('click', quizCloseBtn, closeQuiz);
 
   const quizCloseBtn_y = '#quiz-y-pop .quiz-pop-cancel';
-  container.on('click', quizCloseBtn_y, closeQuiz_y);
+  container.on('click', quizCloseBtn_y, function(){
+    if(stage == "stage-3" && step == "step-7") {
+      $("#quiz-y-pop .quiz-pop-button").trigger('click');
+    } else {
+      closeQuiz_y();
+    }
+  });
 
   const quizCloseBtn_n = '#quiz-n-pop .quiz-pop-cancel';
-  container.on('click', quizCloseBtn_n, closeQuiz_n);
+  container.on('click', quizCloseBtn_n, function(){
+    if(stage == "stage-3" && step == "step-7") {
+      $("#quiz-n-pop .quiz-pop-button").trigger('click');
+    } else {
+      closeQuiz_n();
+    }
+  });
 
   const quizBackBtn = "#quiz-n-pop .quiz-pop-button";
   container.on('click', quizBackBtn, function(){
