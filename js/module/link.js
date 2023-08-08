@@ -1,6 +1,6 @@
 const linkData = {
   'stage-0' : {
-    link : 'http://127.0.0.1:5500/stage1.html'
+    link : '/stage1.html'
   },
   'stage-1' : {
     link : '/stage2.html'
