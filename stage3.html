@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>월드비전 2교시 방탈출</title>
+
+  <link rel="stylesheet" href="/css/reset.css">
+  <link rel="stylesheet" href="/css/contents.css">
+
+  <script src="//code.jquery.com/jquery-3.3.1.min.js"></script>
+  <script src="/js/module/timer.js" type="module" defer></script>
+  <script src="/js/module/stageStart.js" type="module" defer></script>
+  <script src="/js/module/link.js" type="module" defer></script>
+  <script src="/js/module/step.js" type="module" defer></script>
+  <script src="/js/module/dialog.js" type="module" defer></script>
+  <script src="/js/module/item.js" type="module" defer></script>
+  <script src="/js/module/infoPopup.js" type="module" defer></script>
+  <script src="/js/module/quizPopup.js" type="module" defer></script>
+  <script src="/js/contents.js" type="module" defer></script>
+</head>
+<body>
+  <div id="app">
+    <div id="container" class="stage-3">
+      <!-- 공통영역 { -->
+      <div id="stage-title">
+        <img src="/img/stage-3_start.png" alt="Stage3:출산을 앞둔 가정">
+      </div>
+
+      <button type="button" id="map">
+        <img src="/img/lay-map.png" alt="">
+      </button>
+
+      <div id="timer"></div>
+      
+      <div id="inventory">
+        <div class="inventory-item"></div>
+        <div class="inventory-item"></div>
+        <div class="inventory-item"></div>
+        <div class="inventory-item"></div>
+        <div class="inventory-item"></div>
+        <div class="inventory-item"></div>
+      </div>
+
+      <div id="item-pop" class="reset-pop"></div>
+
+      <div id="info-pop" class="reset-pop"></div>
+
+      <div id="quiz-pop" class="reset-pop"></div>
+
+      <div id="quiz-y-pop" class="reset-pop">
+        <div class="quiz-pop-contents">
+          <button type="button" class="quiz-pop-cancel"><img src="/img/icon-cancel.png" alt="팝업 닫기"></button>
+          <div class="quiz-pop-inner">
+            <div class="quiz-pop-title">정답입니다!</div>
+            <div class="hansans quiz-pop-expl"></div>
+          </div>
+        </div>
+      </div>
+
+      <div id="quiz-n-pop" class="reset-pop">
+        <div class="quiz-pop-contents">
+          <button type="button" class="quiz-pop-cancel"><img src="/img/icon-cancel.png" alt="팝업 닫기"></button>
+          <div class="quiz-pop-inner">
+            <div class="quiz-pop-title">오답입니다!</div>
+            <button type="button" class="btn1 quiz-pop-button">돌아가기</button>
+          </div>
+        </div>
+      </div>
+      <!-- } 공통영역 -->
+      <div id="stage-3" class="stage">
+        <div id="step-0" class="step">
+          <button type="button" class="step-btn"></button>
+        </div>
+        <div id="step-1" class="step">
+          <button type="button" class="step-btn"></button>
+        </div>
+        <div id="step-2" class="step">
+          <button type="button" class="step-btn"></button>
+        </div>
+        <div id="step-3" class="step">
+
+        </div>
+        <div id="step-4" class="step">
+          <button type="button" class="step-btn"></button>
+        </div>
+        <div id="step-5" class="step">
+          <button type="button" class="step-btn"></button>
+        </div>
+        <div id="step-6" class="step">
+          <button type="button" class="step-btn"></button>
+        </div>
+        <div id="step-7" class="step">
+
+        </div>
+        <div id="step-8" class="step">
+          <button type="button" class="step-btn"></button>
+        </div>
+        <div id="step-9" class="step">
+          <button type="button" class="step-btn"></button>
+        </div>
+        <div id="step-10" class="step">
+          <button type="button" class="step-btn"></button>
+        </div>
+        <div id="step-11" class="step">
+
+        </div>
+        <div id="step-12" class="step">
+          <button type="button" class="step-btn"></button>
+        </div>
+        <div id="step-13" class="step">
+          <button type="button" class="step-btn"></button>
+        </div>
+        <div id="step-14" class="step">
+
+        </div>
+        <div id="step-15" class="step">
+          
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>

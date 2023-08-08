@@ -1,0 +1,221 @@
+/* ===Game=== */
+/* Layout */
+#stage-title {position: absolute; top: 0; left: 20px; z-index: 10;}
+.stage-1 #stage-title {width: 268px;}
+.stage-2 #stage-title {width: 268px;}
+.stage-3 #stage-title {width: 298px;}
+.stage-4 #stage-title {width: 408px;}
+.stage-5 #stage-title {width: 268px;}
+.stage-6 #stage-title {width: 298px;}
+.stage-7 #stage-title {width: 298px;}
+
+#map {display: block; position: absolute; top: 26px; right: 174px; z-index: 10; width: 40px; height: 38px; border: 0; background: none;}
+
+#timer {display: block; position: absolute; top: 20px; right: 20px; z-index: 10; width: 134px; height: 50px; padding-top: 12px; font-family: 'GangwonEduPowerExtraBoldA', sans-serif; font-size: 30px; color: #fffbf7; letter-spacing: 5px; background: url('/img/lay-timer.png') no-repeat center/contain; text-align: center;}
+
+#inventory {display: block; overflow-y: auto; position: absolute; top: 96px; right: 20px; z-index: 10; width: 136px; height: 672px; padding: 10px; border-radius: 12px; background: rgba(35,21,10,0.6); -ms-overflow-style: none; scrollbar-width: none;}
+#inventory::-webkit-scrollbar {
+  display: none;
+}
+#inventory .inventory-item {display: block; width: 116px; height: 116px; margin-top: 10px; border: 0; border-radius: 5px; background: rgba(93,83,79,0.3); text-align: center;}
+#inventory .inventory-item:first-child {margin-top: 0;}
+#inventory .inventory-item img {max-width: 100%;}
+#inventory .item-info-btn {display: block; width: 100%; height: 100%; padding: 10px; border: 0; border-radius: 5px; background: rgba(93,83,79,1);}
+
+/* UI */
+.btn1 {display: block; width: 250px; height: 55px; line-height: 55px; padding-top: 6px; border: 0; border-radius: 26px; font-family: 'GangwonEduPowerExtraBoldA', sans-serif; font-size: 30px; color: #483b34; text-align: center; background: #fff;}
+
+.link-btn {border: 0; background: none;}
+
+.step-btn {border: 0; background: none;}
+
+.item-btn {position: absolute; z-index: 10; border: 0; background: none;}
+.item-btn:hover {box-shadow: 0 0 20px rgba(253, 203, 23, 0.9); border-radius: 50px; background: rgba(253, 203, 23, 0.5);}
+.dialog .item-btn:hover {box-shadow: none; border-radius: 0; background: none;}
+#item-book {top: 424px; left: 470px; width: 46px; height: 23px;}
+#item-muac {top: 373px; left: 599px; width: 43px; height: 24px;}
+#item-vest {top: 389px; left: 312px; width: 25px; height: 31px;}
+#item-hat {top: 404px; left: 666px; width: 43px; height: 26px;}
+
+.pop-dim {position: absolute; top: 0; left: 0; z-index: 100; width: 100%; height: 100%; background: rgba(0,0,0,0.8); animation: fadeOut 1s ease 1s forwards;}
+.pop-contents {position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%);}
+
+.dialog{display: block; position:absolute; bottom:20px; left:20px; width: 1170px; border-radius: 20px; background:rgba(0,0,0,0.7);}
+.dialog-li {display: none;}
+.dialog-li:first-child {display: block;}
+.dialog-li.notice {height: 106px; padding: 40px 40px 0; text-align: center;}
+.dialog-li.talk {height: 228px; padding: 40px 40px 0; text-align: left;}
+.dialog_text-bold{font-size: 25px;  font-weight: 800;color: #fffbf7;}
+.dialog_text-small{margin-top: 26px; font-family: 'SpoqaHanSansNeo-Regular';font-size: 20px;line-height: 1.6;color: #fff;}
+.dialog-arrow-prev{display:block; position: absolute; bottom:34px; right:135px; font-family: 'SpoqaHanSansNeo-Regular'; font-size: 16px; line-height: 2; color: #fff;  background: none; border:0; letter-spacing: normal;}
+.dialog-arrow-next{display:block; position: absolute; bottom:34px; right:40px; font-family: 'SpoqaHanSansNeo-Regular'; font-size: 16px; line-height: 2; color: #fff;  background: none; border:0; letter-spacing: normal;}
+
+#item-pop {display: none; position: absolute; top: 0; left: 0; z-index: 100; width: 100%; height: 100%; background: rgba(0,0,0,0.8);}
+#item-pop .item-pop-contents {display: flex; flex-flow: column wrap; justify-content: center; align-items: center; position: absolute; top: 100px; left: 104px; z-index: 60; width: 1162px; height: 568px; padding: 20px; border-radius: 20px; -webkit-backdrop-filter: blur(40px); backdrop-filter: blur(40px); background-color: rgba(255, 255, 255, 0.2);}
+#item-pop .item-pop-inner {}
+#item-pop .item-pop-cancel {position: absolute; top: 40px; right: 40px; z-index: 65; width: 24px; height: 24px; border: 0; background: none;}
+#item-pop .item-pop-img {text-align: center;}
+#item-pop .item-pop-title {margin-top: 21px; padding-top: 11px; font-size: 36px; color: #fff; line-height: normal; text-align: center;}
+#item-pop .item-pop-expl {margin-top: 13px; font-size: 20px; color: #fff; line-height: 2.1; text-align: center;}
+#item-pop .item-pop-button {margin: 24px auto 0; background: #fff;}
+
+#info-pop {display: none; position: absolute; top: 0; left: 0; z-index: 100; width: 100%; height: 100%; background: rgba(0,0,0,0.8);}
+#info-pop .info-pop-contents {display: flex; flex-flow: column wrap; justify-content: center; align-items: center; position: absolute; top: 100px; left: 104px; z-index: 60; width: 1162px; height: 568px; padding: 20px; border-radius: 20px; -webkit-backdrop-filter: blur(40px); backdrop-filter: blur(40px); background-color: rgba(255, 255, 255, 0.2);}
+#info-pop .info-pop-inner {}
+#info-pop .info-pop-cancel {position: absolute; top: 40px; right: 40px; z-index: 65; width: 24px; height: 24px; border: 0; background: none;}
+#info-pop .info-pop-img {text-align: center;}
+#info-pop .info-pop-title {margin-top: 21px; padding-top: 11px; font-size: 36px; color: #fff; line-height: normal; text-align: center;}
+#info-pop .info-pop-expl {margin-top: 13px; font-size: 20px; color: #fff; line-height: 2.1; text-align: center;}
+#info-pop .info-pop-button {margin: 24px auto 0; background: #fff;}
+
+#quiz-pop {display: none; position: absolute; top: 0; left: 0; z-index: 100; width: 100%; height: 100%; background: rgba(0,0,0,0.8);}
+#quiz-pop .quiz-pop-contents {display: flex; flex-flow: column wrap; justify-content: center; align-items: center; position: absolute; top: 100px; left: 104px; z-index: 60; width: 1162px; height: 568px; padding: 20px; border-radius: 20px; -webkit-backdrop-filter: blur(40px); backdrop-filter: blur(40px); background-color: rgba(255, 255, 255, 0.2);}
+#quiz-pop .quiz-pop-inner {}
+#quiz-pop .quiz-pop-cancel {position: absolute; top: 40px; right: 40px; z-index: 65; width: 24px; height: 24px; border: 0; background: none;}
+#quiz-pop .quiz-pop-img {text-align: center;}
+#quiz-pop .quiz-pop-title {margin-top: 21px; padding-top: 11px; font-size: 36px; color: #fff; line-height: normal; text-align: center;}
+#quiz-pop .quiz-pop-expl {margin-top: 24px; font-size: 18px; color: #fff; line-height: 1.78; text-align: center;}
+#quiz-pop .quiz-pop-answer {display: flex; flex-flow: row wrap; justify-content: center; align-items: center; gap: 0 24px; margin-top: 24px;}
+#quiz-pop .quiz-pop-choice {display: flex; justify-content: center; align-items: center; text-align: center; width: 240px; height: 148px; border: 1px solid #fff; border-radius: 20px; line-height: 1.56; cursor: pointer;}
+#quiz-pop .quiz-pop-choice.on {background-color: rgba(255, 255, 255, 0.6);}
+#quiz-pop .quiz-pop-button {margin: 24px auto 0; background: #fff;}
+
+#quiz-y-pop {display: none; position: absolute; top: 0; left: 0; z-index: 100; width: 100%; height: 100%; background: rgba(0,0,0,0.8);}
+#quiz-y-pop .quiz-pop-contents {display: flex; flex-flow: column wrap; justify-content: center; align-items: center; position: absolute; top: 100px; left: 104px; z-index: 60; width: 1162px; height: 568px; padding: 20px; border-radius: 20px; -webkit-backdrop-filter: blur(40px); backdrop-filter: blur(40px); background-color: rgba(255, 255, 255, 0.2);}
+#quiz-y-pop .quiz-pop-inner {}
+#quiz-y-pop .quiz-pop-cancel {position: absolute; top: 40px; right: 40px; z-index: 65; width: 24px; height: 24px; border: 0; background: none;}
+#quiz-y-pop .quiz-pop-img {text-align: center;}
+#quiz-y-pop .quiz-pop-title {margin-top: 21px; padding-top: 11px; font-size: 36px; color: #fff; line-height: normal; text-align: center;}
+#quiz-y-pop .quiz-pop-expl {margin-top: 13px; font-size: 20px; color: #fff; line-height: 2.1; text-align: center;}
+#quiz-y-pop .quiz-pop-button {margin: 24px auto 0; background: #fff;}
+
+#quiz-n-pop {display: none; position: absolute; top: 0; left: 0; z-index: 100; width: 100%; height: 100%; background: rgba(0,0,0,0.8);}
+#quiz-n-pop .quiz-pop-contents {display: flex; flex-flow: column wrap; justify-content: center; align-items: center; position: absolute; top: 100px; left: 104px; z-index: 60; width: 1162px; height: 568px; padding: 20px; border-radius: 20px; -webkit-backdrop-filter: blur(40px); backdrop-filter: blur(40px); background-color: rgba(255, 255, 255, 0.2);}
+#quiz-n-pop .quiz-pop-inner {}
+#quiz-n-pop .quiz-pop-cancel {position: absolute; top: 40px; right: 40px; z-index: 65; width: 24px; height: 24px; border: 0; background: none;}
+#quiz-n-pop .quiz-pop-img {text-align: center;}
+#quiz-n-pop .quiz-pop-title {margin-top: 21px; padding-top: 11px; font-size: 36px; color: #fff; line-height: normal; text-align: center;}
+#quiz-n-pop .quiz-pop-expl {margin-top: 13px; font-size: 20px; color: #fff; line-height: 2.1; text-align: center;}
+#quiz-n-pop .quiz-pop-button {margin: 24px auto 0; background: #fff;}
+
+/* Stage, Step */
+.stage {width: 100%; height: 100%;}
+
+.step {display: none; position: relative; width: 100%; height: 100%;}
+
+/* Stage 0 (intro) */
+#stage-0 #step-0 {background: url('/img/stage-0_step-0_bg.jpg') no-repeat center left -1px/contain;}
+#stage-0 #step-0 .step-btn {position: absolute; top: 533px; left: 50%; z-index: 5; margin-left: -125px;}
+
+#stage-0 #step-1 {background: url('/img/stage-0_step-1_bg.jpg') no-repeat center/contain;}
+#stage-0 #step-1 .link-btn {position: absolute; top: 523px; left: 50%; z-index: 5; margin-left: -125px;}
+
+/* Stage 1 */
+#stage-1_start .pop-contents {width: 536px; height: 252px; background: url('/img/stage-1_start.png') no-repeat center/contain;}
+
+#stage-1 #step-0 {background: url('/img/stage-1_step-0_bg.jpg') no-repeat center/contain;}
+#stage-1 #step-0 .step-btn {position: absolute; top: 0; left: 0; z-index: 5; width: 630px; height: 396px; background: url('/img/stage-1_step-0_step.png') no-repeat center/contain;}
+
+#stage-1 #step-1 {background: url('/img/stage-1_step-1_bg.jpg') no-repeat center/contain;}
+#stage-1 #step-1 .step-btn {position: absolute; top: 423px; left: 389px; z-index: 5; width: 40px; height: 85px; background: url('/img/stage-1_step-1_step.png') no-repeat center/contain;}
+
+#stage-1 #step-2 {background: url('/img/stage-1_step-2_bg.jpg') no-repeat center/contain;}
+
+#stage-1 #step-3 {background: url('/img/stage-1_step-3_bg.jpg') no-repeat center/contain;}
+
+/* Stage 2 */
+#stage-2_start .pop-contents {width: 536px; height: 252px; background: url('/img/stage-2_start.png') no-repeat center/contain;}
+
+#stage-2 #step-0 {background: url('/img/stage-2_step-0_bg.jpg') no-repeat center/contain;}
+#stage-2 #step-0 .step-btn {position: absolute; top: 54px; right: 180px; z-index: 5; width: 268px; height: 272px; background: url('/img/stage-2_step-0_step.png') no-repeat center/contain;}
+
+#stage-2 #step-1 {background: url('/img/stage-2_step-1_bg.jpg') no-repeat center/contain;}
+#stage-2 #step-1 .step-btn {position: absolute; top: 396px; left: 596px; z-index: 5; width: 33px; height: 88px; background: url('/img/stage-2_step-1_step.png') no-repeat center/contain;}
+
+#stage-2 #step-2 {background: url('/img/stage-2_step-2_bg.jpg') no-repeat center/contain;}
+
+#stage-2 #step-3 {background: url('/img/stage-2_step-3_bg.jpg') no-repeat center/contain;}
+#stage-2 #step-3 .step-btn {position: absolute; top: 390px; left: 20px; z-index: 5; width: 403px; height: 378px; background: url('/img/stage-2_step-3_step.png') no-repeat center/contain;}
+
+#stage-2 #step-4 {background: url('/img/stage-2_step-4_bg.jpg') no-repeat center/contain;}
+#stage-2 #step-4 .step-btn {position: absolute; top: 342px; left: 272px; z-index: 5; width: 33px; height: 63px; background: url('/img/stage-2_step-4_step.png') no-repeat center/contain;}
+
+#stage-2 #step-5 {background: url('/img/stage-2_step-5_bg.jpg') no-repeat center/contain;}
+
+#stage-2 #step-6 {background: url('/img/stage-2_step-6_bg.jpg') no-repeat center/contain;}
+#stage-2 #step-6 .step-btn {position: absolute; top: 54px; right: 180px; z-index: 5; width: 268px; height: 272px; background: url('/img/stage-2_step-6_step.png') no-repeat center/contain;}
+
+#stage-2 #step-7 {background: url('/img/stage-2_step-7_bg.jpg') no-repeat center/contain;}
+
+/* Stage 3 */
+#stage-3_start .pop-contents {width: 536px; height: 252px; background: url('/img/stage-3_start.png') no-repeat center/contain;}
+
+#stage-3 #step-0 {background: url('/img/stage-3_step-0_bg.jpg') no-repeat center/contain;}
+#stage-3 #step-0 .step-btn {position: absolute; bottom: 34px; right: 635px; z-index: 5; width: 96px; height: 96px; background: url('/img/arrow-bottom.png') no-repeat center/contain;}
+
+#stage-3 #step-1 {background: url('/img/stage-3_step-1_bg.jpg') no-repeat center/contain;}
+#stage-3 #step-1 .step-btn {position: absolute; top: 171px; left: 625px; z-index: 5; width: 411px; height: 322px; background: url('/img/stage-3_step-1_step.png') no-repeat center/contain;}
+
+#stage-3 #step-2 {background: url('/img/stage-3_step-2_bg.jpg') no-repeat center/contain;}
+#stage-3 #step-2 .step-btn {position: absolute; top: 419px; left: 656px; z-index: 5; width: 82px; height: 58px; background: url('/img/stage-3_step-2_step.png') no-repeat center/contain;}
+
+#stage-3 #step-3 {background: url('/img/stage-3_step-3_bg.jpg') no-repeat center/contain;}
+
+#stage-3 #step-4 {background: url('/img/stage-3_step-4_bg.jpg') no-repeat center/contain;}
+#stage-3 #step-4 .step-btn {position: absolute; top: 40px; right: 635px; z-index: 5; width: 96px; height: 96px; background: url('/img/arrow-up.png') no-repeat center/contain;}
+
+#stage-3 #step-5 {background: url('/img/stage-3_step-5_bg.jpg') no-repeat center/contain;}
+#stage-3 #step-5 .step-btn {position: absolute; top: 390px; left: 20px; z-index: 5; width: 403px; height: 378px; background: url('/img/stage-3_step-5_step.png') no-repeat center/contain;}
+
+#stage-3 #step-6 {background: url('/img/stage-3_step-6_bg.jpg') no-repeat center/contain;}
+#stage-3 #step-6 .step-btn {position: absolute; top: 545px; left: 498px; z-index: 5; width: 37px; height: 83px; background: url('/img/stage-3_step-6_step.png') no-repeat center/contain;}
+
+#stage-3 #step-7 {background: url('/img/stage-3_step-7_bg.jpg') no-repeat center/contain;}
+
+#stage-3 #step-8 {background: url('/img/stage-3_step-8_bg.jpg') no-repeat center/contain;}
+#stage-3 #step-8 .step-btn {position: absolute; bottom: 34px; right: 635px; z-index: 5; width: 96px; height: 96px; background: url('/img/arrow-bottom.png') no-repeat center/contain;}
+
+#stage-3 #step-9 {background: url('/img/stage-3_step-9_bg.jpg') no-repeat center/contain;}
+#stage-3 #step-9 .step-btn {position: absolute; top: 171px; left: 625px; z-index: 5; width: 411px; height: 322px; background: url('/img/stage-3_step-9_step.png') no-repeat center/contain;}
+
+#stage-3 #step-10 {background: url('/img/stage-3_step-10_bg.jpg') no-repeat center/contain;}
+#stage-3 #step-10 .step-btn {position: absolute; top: 419px; left: 656px; z-index: 5; width: 82px; height: 58px; background: url('/img/stage-3_step-10_step.png') no-repeat center/contain;}
+
+#stage-3 #step-11 {background: url('/img/stage-3_step-11_bg.jpg') no-repeat center/contain;}
+
+#stage-3 #step-12 {background: url('/img/stage-3_step-12_bg.jpg') no-repeat center/contain;}
+#stage-3 #step-12 .step-btn {position: absolute; bottom: 34px; right: 635px; z-index: 5; width: 96px; height: 96px; background: url('/img/arrow-bottom.png') no-repeat center/contain;}
+
+#stage-3 #step-13 {background: url('/img/stage-3_step-13_bg.jpg') no-repeat center/contain;}
+#stage-3 #step-13 .step-btn {position: absolute; bottom: 67px; right: 384px; z-index: 5; width: 153px; height: 112px; background: url('/img/stage-3_step-13_step.png') no-repeat center/contain;}
+
+#stage-3 #step-14 {background: url('/img/stage-3_step-14_bg.jpg') no-repeat center/contain;}
+
+#stage-3 #step-15 {background: url('/img/stage-3_step-15_bg.jpg') no-repeat center/contain;}
+
+/* Stage 4 */
+#stage-4_start .pop-contents {width: 536px; height: 252px; background: url('/img/stage-4_start.png') no-repeat center/contain;}
+
+#stage-4 #step-0 {}
+
+/* Stage 5 */
+#stage-5_start .pop-contents {width: 536px; height: 252px; background: url('/img/stage-5_start.png') no-repeat center/contain;}
+
+#stage-5 #step-0 {}
+
+/* Stage 6 */
+#stage-6_start .pop-contents {width: 536px; height: 252px; background: url('/img/stage-6_start.png') no-repeat center/contain;}
+
+#stage-6 #step-0 {}
+
+/* Keyframes */
+@keyframes fadeOut {
+  0% { 
+    opacity: 1;
+    visibility: visible;
+  }
+  100% { 
+    opacity: 0;
+    visibility: hidden;
+  }
+}
