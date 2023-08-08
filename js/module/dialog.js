@@ -329,6 +329,16 @@ const dialogData = {
         }
       ]
     }
+  },
+  'stage-6' : {
+		'step-7' : {
+			msg : [
+        {
+          type : 'notice',
+          text1 : 'CVA 활동장소에 들어왔습니다. 게시판을 클릭해 오늘 활동에 대한 의견을 남겨보세요.'
+        }
+      ]
+    }
   }
 }
 

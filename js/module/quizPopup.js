@@ -64,6 +64,69 @@ const quizPopData = {
         btn : `<button type="button" class="btn1 quiz-pop-button step-btn">마을로 돌아가기</button>`
       }
     },
+  },
+  'stage-6' : {
+    'step-2' : {
+      title : `문제 1. 임신 전반에 걸쳐 빈혈증세가 나타날 수 있다.`,
+      expl : `CVA 활동장소에 들어가려면 월드비전 보건요원임을 인증해야한다.`,
+      type : 'multiple',
+      answer : [
+        'O',
+        'X'
+      ],
+      correct : 1,
+      btn : `<button type="button" class="btn1 quiz-pop-button quiz-check-btn">정답 제출하기</button>`,
+      check : {
+        expl : `임신 기간 중 언제든 빈혈증세가 나타날 수 있습니다.`,
+        btn : `<button type="button" class="btn1 quiz-pop-button step-btn">다음 문제풀기</button>`
+      }
+    },
+    'step-3' : {
+      title : `문제 2. 영유아의 영양실조를 체크하는 방법은<br/>MUAC 테이프로 다리 둘레를 재는 것이다.`,
+      expl : `CVA 활동장소에 들어가려면 월드비전 보건요원임을 인증해야한다.`,
+      type : 'multiple',
+      answer : [
+        'O',
+        'X'
+      ],
+      correct : 2,
+      btn : `<button type="button" class="btn1 quiz-pop-button quiz-check-btn">정답 제출하기</button>`,
+      check : {
+        expl : `영유아의 영양실조를 체크하는 방법은 MUAC 테이프로 팔뚝의 둘레를 재는 것이다.`,
+        btn : `<button type="button" class="btn1 quiz-pop-button step-btn">다음 문제풀기</button>`
+      }
+    },
+    'step-4' : {
+      title : `문제 3. 청소년 친화 보건 시설의 약자는 AEHE이다.`,
+      expl : `CVA 활동장소에 들어가려면 월드비전 보건요원임을 인증해야한다.`,
+      type : 'multiple',
+      answer : [
+        'O',
+        'X'
+      ],
+      correct : 2,
+      btn : `<button type="button" class="btn1 quiz-pop-button quiz-check-btn">정답 제출하기</button>`,
+      check : {
+        expl : `청소년 친화 보건 시설의 약자는 AFHF이다.`,
+        btn : `<button type="button" class="btn1 quiz-pop-button step-btn">다음 문제풀기</button>`
+      }
+    },
+    'step-5' : {
+      title : `최종 문제. 정책을 제안하는 교육활동 CVA는 무엇의 약자일까?`,
+      expl : `지금까지 마을사람들을 도와주며 얻은 코드를 조합하면 쉽게 알 수 있다.`,
+      type : 'multiple',
+      answer : [
+        'CITIZEN<br/>VOICE<br/>ACTION',
+        'CHANGE<br/>VALUE<br/>AGAINST',
+        'CITIZEN<br/>VALUE<br/>ACTIVE'
+      ],
+      correct : 1,
+      btn : `<button type="button" class="btn1 quiz-pop-button quiz-check-btn">정답 제출하기</button>`,
+      check : {
+        expl : `정책을 제안하는 교육활동 CVA는 CITIZEN VOICE ACTION의 약자이다.<br/>모든 퀴즈를 맞췄습니다. CVA 활동장소로 입장합니다.`,
+        btn : `<button type="button" class="btn1 quiz-pop-button step-btn">입장하기</button>`
+      }
+    }
   }
 }
 

@@ -29,6 +29,10 @@
 
 .step-btn {border: 0; background: none;}
 
+.info-btn {border: 0; background: none;}
+
+.board-btn {border: 0; background: none;}
+
 .item-btn {position: absolute; z-index: 10; border: 0; background: none;}
 .item-btn:hover {box-shadow: 0 0 20px rgba(253, 203, 23, 0.9); border-radius: 50px; background: rgba(253, 203, 23, 0.5);}
 .dialog .item-btn:hover {box-shadow: none; border-radius: 0; background: none;}
@@ -240,7 +244,24 @@
 /* Stage 6 */
 #stage-6_start .pop-contents {width: 536px; height: 252px; background: url('/img/stage-6_start.png') no-repeat center/contain;}
 
-#stage-6 #step-0 {}
+#stage-6 #step-0 {background: url('/img/stage-6_step-0_bg.jpg') no-repeat center/contain;}
+#stage-6 #step-0 .step-btn {position: absolute; top: 40px; right: 635px; z-index: 5; width: 96px; height: 96px; background: url('/img/arrow-up.png') no-repeat center/contain;}
+
+#stage-6 #step-1 {background: url('/img/stage-6_step-1_bg.jpg') no-repeat center/contain;}
+#stage-6 #step-1 .info-btn {position: absolute; top: 65px; left: 193px; z-index: 5; width: 750px; height: 431px; background: url('/img/stage-6_step-1_step.png') no-repeat center/contain;}
+
+#stage-6 #step-2 {background: url('/img/stage-6_step-1_bg.jpg') no-repeat center/contain;}
+
+#stage-6 #step-3 {background: url('/img/stage-6_step-1_bg.jpg') no-repeat center/contain;}
+
+#stage-6 #step-4 {background: url('/img/stage-6_step-1_bg.jpg') no-repeat center/contain;}
+
+#stage-6 #step-5 {background: url('/img/stage-6_step-1_bg.jpg') no-repeat center/contain;}
+
+#stage-6 #step-6 {background: url('/img/stage-6_step-6_bg.jpg') no-repeat center/contain;}
+
+#stage-6 #step-7 {background: url('/img/stage-6_step-7_bg.jpg') no-repeat center/contain;}
+#stage-6 #step-7 .board-btn {position: absolute; top: 206px; left: 346px; z-index: 5; width: 200px; height: 146px; background: url('/img/stage-6_step-7_board.png') no-repeat center/contain;}
 
 /* Keyframes */
 @keyframes fadeOut {
