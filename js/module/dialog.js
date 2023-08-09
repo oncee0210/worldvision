@@ -147,6 +147,14 @@ const dialogData = {
         },
       ]
 		},
+    'step-6' : {
+			msg : [
+        {
+          type : 'notice',
+          text1 : "보건소에 들어왔습니다. '보건소 직원'에게 보트바우처를 문의하세요."
+        }
+      ]
+		},
     'step-7' : {
 			msg : [
         {
