@@ -15,6 +15,8 @@ function updateTimer() {
   if (currentTimeInSeconds > 0) {
     currentTimeInSeconds--;
     setTimeout(updateTimer, 1000);
+  } else if (currentTimeInSeconds == 0){
+    timerDisplay.classList.add('over');
   }
 }
 
