@@ -39,6 +39,8 @@ const itemPop = document.getElementById("item-pop");
 const $itemPop = $("#item-pop");
 
 const viewItem = (itemId) => {
+  $itemPop.html('');
+
   const itemPopContents = document.createElement('div');
   itemPopContents.classList.add('item-pop-contents');
 
