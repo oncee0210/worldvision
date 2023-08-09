@@ -212,4 +212,13 @@ window.onload = function() {
   if(stage == 'stage-2' || stage == 'stage-3' || stage == 'stage-4'){
     getItem('muac');
   }
+
+  //공통상단 마을지도
+  $("#map-btn").on('click', function(){
+    $("#map-pop").fadeIn(200);
+  })
+
+  $(".map-pop-cancel").on('click', function(){
+    $("#map-pop").fadeOut(200);
+  })
 }
