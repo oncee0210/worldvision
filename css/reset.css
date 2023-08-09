@@ -28,7 +28,7 @@ p{word-break: keep-all;}
 input{border-radius: 0;}
 
 /* guide line */
-#app {display: flex; justify-content: center; align-items: center; position: relative; width: 100%; height: 100%;}
+#app {display: flex; justify-content: center; align-items: center; position: relative; width: 1366px; height: 100%; margin: 0 auto;}
 #container {overflow: hidden; position: relative; width: 1366px; height: 768px; background: #000;}
 
 /* font */
