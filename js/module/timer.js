@@ -1,5 +1,5 @@
-const totalTimeInSeconds = 40 * 60;
-let currentTimeInSeconds = 0;
+const stageTimeInSeconds = 10 * 60;
+let timerInterval;
 
 function formatTime(seconds) {
   const minutes = Math.floor(seconds / 60);
@@ -9,25 +9,23 @@ function formatTime(seconds) {
   return `${formattedMinutes}:${formattedSeconds}`;
 }
 
-function updateTimer() {
-  const timerDisplay = document.getElementById('timer');
-  timerDisplay.textContent = formatTime(currentTimeInSeconds);
-  if (currentTimeInSeconds > 0) {
-    currentTimeInSeconds--;
-    setTimeout(updateTimer, 1000);
-  } else if (currentTimeInSeconds == 0){
+function updateTimer(timerDisplay, remainingTimeInSeconds) {
+  timerDisplay.textContent = formatTime(remainingTimeInSeconds);
+  if (remainingTimeInSeconds > 0) {
+    remainingTimeInSeconds--;
+  } else {
+    clearInterval(timerInterval);
     timerDisplay.classList.add('over');
   }
 }
 
 function startTimer() {
-  currentTimeInSeconds = sessionStorage.getItem('timerValue') || totalTimeInSeconds;
-  updateTimer();
-}
-
-function saveTimer() {
-  sessionStorage.setItem('timerValue', currentTimeInSeconds);
+  const timerDisplay = document.getElementById('timer');
+  let remainingTimeInSeconds = stageTimeInSeconds;
+  timerInterval = setInterval(() => {
+    updateTimer(timerDisplay, remainingTimeInSeconds);
+    remainingTimeInSeconds--;
+  }, 1000);
 }
 
 window.addEventListener('load', startTimer);
-window.addEventListener('beforeunload', saveTimer);
