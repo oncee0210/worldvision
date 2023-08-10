@@ -11,7 +11,7 @@
 
 #map-btn {display: block; position: absolute; top: 26px; right: 174px; z-index: 10; width: 40px; height: 38px; border: 0; background: none;}
 
-#timer {display: block; position: absolute; top: 20px; right: 20px; z-index: 10; width: 134px; height: 50px; padding-top: 12px; font-family: 'GangwonEduPowerExtraBoldA', sans-serif; font-size: 30px; color: #fffbf7; letter-spacing: 5px; background: url('/img/lay-timer.png') no-repeat center/contain; text-align: center;}
+#timer {display: block; position: absolute; top: 20px; right: 20px; z-index: 10; width: 134px; height: 50px; padding-top: 6px; font-family: 'GangwonEduPowerExtraBoldA', sans-serif; font-size: 30px; color: #fffbf7; letter-spacing: 5px; background: url('/img/lay-timer.png') no-repeat center/contain; text-align: center;}
 #timer.over {opacity: 0.5;}
 
 #inventory {display: block; overflow-y: auto; position: absolute; top: 96px; right: 20px; z-index: 10; width: 136px; height: 672px; padding: 10px; border-radius: 12px; background: rgba(35,21,10,0.6); -ms-overflow-style: none; scrollbar-width: none;}
@@ -24,7 +24,7 @@
 #inventory .item-info-btn {display: block; width: 100%; height: 100%; padding: 10px; border: 0; border-radius: 5px; background: rgba(93,83,79,1);}
 
 /* UI */
-.btn1 {display: block; width: 250px; height: 55px; line-height: 55px; padding-top: 6px; border: 0; border-radius: 26px; font-family: 'GangwonEduPowerExtraBoldA', sans-serif; font-size: 30px; color: #483b34; text-align: center; background: #fff;}
+.btn1 {display: block; width: 250px; height: 55px; line-height: 55px; /*padding-top: 6px;*/ border: 0; border-radius: 26px; font-family: 'GangwonEduPowerExtraBoldA', sans-serif; font-size: 30px; color: #483b34; text-align: center; background: #fff;}
 
 .link-btn {border: 0; background: none;}
 
