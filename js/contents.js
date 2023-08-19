@@ -38,11 +38,13 @@ window.onload = function() {
 
     if(stage == 'stage-3' && step == 'step-8') {
       getItem('boat');
+    } else if(stage == 'stage-4' && step == 'step-2') {
+      getItem('muac');
     } else if(stage == 'stage-4' && step == 'step-5') {
-      removeItem('muac')
+      removeItem('muac');
     } else if(stage == 'stage-6') {
       if(step == 'step-2' || step == 'step-3' || step == 'step-4' || step == 'step-5') {
-        viewQuiz(stage, step)
+        viewQuiz(stage, step);
       } else if (step == 'step-6') {
         viewInfo(stage, step);
       }
@@ -89,7 +91,7 @@ window.onload = function() {
       }
     } else if(stage == "stage-4" && step == "step-4") {
       if(itemId == 'muac') {
-        $("#item-pop .item-pop-inner").append(`<button type="button" class="btn1 item-pop-button info-btn">아이템 사용하기</button>`);
+        $("#item-pop .item-pop-inner").append(`<button type="button" class="btn1 item-pop-button info-btn">진단하기</button>`);
       }
     } else if(stage == "stage-4" && step == "step-6") {
       if(itemId == 'babyfood') {
@@ -208,10 +210,6 @@ window.onload = function() {
     $("#quiz-pop").fadeIn(200);
     $("#quiz-n-pop").hide();
   });
-
-  if(stage == 'stage-2' || stage == 'stage-3' || stage == 'stage-4'){
-    getItem('muac');
-  }
 
   //공통상단 마을지도
   $("#map-btn").on('click', function(){
