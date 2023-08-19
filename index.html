@@ -14,13 +14,56 @@
 </head>
 <body>
   <div id="app">
-    <div id="container">
+    <div id="container" class="stage-0">
       <div id="stage-0" class="stage">
         <div id="step-0" class="step">
           <button type="button" class="btn1 step-btn">게임 시작하기</button>
         </div>
         <div id="step-1" class="step">
-          <button type="button" class="btn1 link-btn">확인</button>
+
+          <!-- 공통영역 { -->
+          <div id="stage-title">
+            <img src="/img/stage-1_start.png" alt="Stage1:트레이닝센터">
+          </div>
+
+          <button type="button" id="map-btn">
+            <img src="/img/lay-map.png" alt="">
+          </button>
+
+          <div id="timer">10:00</div>
+          
+          <div id="inventory">
+            <div class="inventory-item"></div>
+            <div class="inventory-item"></div>
+            <div class="inventory-item"></div>
+            <div class="inventory-item"></div>
+            <div class="inventory-item"></div>
+            <div class="inventory-item"></div>
+          </div>
+
+          <div id="map-pop">
+            <div class="map-pop-contents">
+              <button type="button" class="map-pop-cancel">
+                <img src="/img/icon-cancel.png" alt="팝업 닫기">
+              </button>
+            </div>
+          </div>
+
+          <div id="guide-pop">
+            <div class="guide-pop-contents">
+              <div class="guide-pop-inner">
+                <div class="guide-pop-title">게임 안내</div>
+                <div class="hansans guide-pop-expl">
+                  이곳은 필리핀 동부 비사야 지역입니다. <br/>
+                  당신의 보건요원 활동을 도와줄 선배 보건요원을 찾아보세요. <br/>
+                  <br/>
+                  지도 아이템을 <img src="/img/lay-map.png" alt="">클릭하면 동부 비사야 마을의 전경을 확인할 수 있습니다.
+                </div>
+                <button type="button" class="btn1 link-btn">확인</button>
+              </div>
+            </div>
+          </div>
+
         </div>
       </div>
     </div>
