@@ -1,7 +1,7 @@
 export const itemData = {
   'hat' : {
     title : '보건요원용 모자',
-    expl : '비사야 지역의 뜨거운 태양을 막아줄 수 있다.',
+    expl : '동부 비사야 지역의 뜨거운 태양을 막아줄 수 있다.',
     img : {
       inven : {
         imgSize : [92, 46],
@@ -43,7 +43,7 @@ export const itemData = {
   },
   'muac' : {
     title : 'MUAC테이프',
-    expl : '간단하게 아이의 팔 둘레를 측정해 영양실조 여부를 확인할 수 있다.',
+    expl : '뮤악 MUAC (Mid Upper Arm Circumference)<br/>간단하게 아이의 팔 둘레를 측정해 영양실조 여부를 확인할 수 있다.',
     img : {
       inven : {
         imgSize : [86, 48],
