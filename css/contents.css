@@ -1,6 +1,7 @@
 /* ===Game=== */
 /* Layout */
 #stage-title {position: absolute; top: 0; left: 20px; z-index: 10;}
+.stage-0 #stage-title {width: 268px;}
 .stage-1 #stage-title {width: 268px;}
 .stage-2 #stage-title {width: 268px;}
 .stage-3 #stage-title {width: 298px;}
@@ -111,6 +112,14 @@
 #quiz-n-pop .quiz-pop-expl {margin-top: 13px; font-size: 20px; color: #fff; line-height: 2.1; text-align: center;}
 #quiz-n-pop .quiz-pop-button {margin: 24px auto 0; background: #fff;}
 
+#guide-pop {display: block; position: absolute; top: 0; left: 0; z-index: 100; width: 100%; height: 100%; background: rgba(0,0,0,0.8);}
+#guide-pop .guide-pop-contents {display: flex; flex-flow: column wrap; justify-content: center; align-items: center; position: absolute; top: 100px; left: 104px; z-index: 60; width: 1162px; height: 568px; padding: 20px; border-radius: 20px; -webkit-backdrop-filter: blur(40px); backdrop-filter: blur(40px); background-color: rgba(255, 255, 255, 0.2);}
+#guide-pop .guide-pop-inner {}
+#guide-pop .guide-pop-title {padding-top: 11px; font-size: 36px; color: #fff; line-height: normal; text-align: center;}
+#guide-pop .guide-pop-expl {margin-top: 24px; font-size: 20px; color: #fff; line-height: 2.1; text-align: center;}
+#guide-pop .guide-pop-expl img {width: 40px; margin: -4px 20px 0 4px; vertical-align: middle;}
+#guide-pop .link-btn {margin: 24px auto 0; background: #fff;}
+
 /* Stage, Step */
 .stage {width: 100%; height: 100%;}
 
@@ -120,8 +129,9 @@
 #stage-0 #step-0 {background: url('/img/stage-0_step-0_bg.jpg') no-repeat center left -1px/contain;}
 #stage-0 #step-0 .step-btn {position: absolute; top: 510px; left: 50%; z-index: 5; margin-left: -125px; font-size: 0; height: 100px;}
 
-#stage-0 #step-1 {background: url('/img/stage-0_step-1_bg.jpg') no-repeat center/contain;}
-#stage-0 #step-1 .link-btn {position: absolute; top: 500px; left: 50%; z-index: 5; margin-left: -125px; font-size: 0; height: 100px;}
+#stage-0 #step-1 {background: url('/img/stage-1_step-0_bg.jpg') no-repeat center/contain;}
+#stage-0_start .pop-contents {width: 536px; height: 252px; background: url('/img/stage-1_start.png') no-repeat center/contain;}
+/* #stage-0 #step-1 .link-btn {position: absolute; top: 500px; left: 50%; z-index: 5; margin-left: -125px; font-size: 0; height: 100px;} */
 
 /* Stage 1 */
 #stage-1_start .pop-contents {width: 536px; height: 252px; background: url('/img/stage-1_start.png') no-repeat center/contain;}
