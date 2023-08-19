@@ -1,13 +1,13 @@
 const quizPopData = {
   'stage-2' : {
     'step-2' : {
-      title : `문제. 철분을 얻기 위해 어디로 이동해야 할까요?`,
+      title : `문제. 철분을 얻기 위해 어디로 이동해야 할까?`,
       expl : `빈혈 증세가 있는 임산부를 위해 철분제를 구해야한다.`,
       type : 'multiple',
       answer : [
         '트레이닝 센터',
         '보건소',
-        '청소년 친화 보건시설</br>(AFHF)'
+        '임산부 가정'
       ],
       correct : 2,
       btn : `<button type="button" class="btn1 quiz-pop-button quiz-check-btn">정답 제출하기</button>`,
@@ -18,7 +18,7 @@ const quizPopData = {
     },
     'step-7' : {
       title : `문제. 철분의 원소기호는 무엇일까?`,
-      expl : `보건소 의사에게 철분제를 얻었다. <br/>철분의 원소기로를 맞춰 빈혈 증세가 있는 임산부에게 전달하자.`,
+      expl : `보건소 의사에게 철분제를 얻었다. <br/>철분의 원소기호를 맞춰 빈혈 증세가 있는 임산부에게 전달하자.`,
       type : 'multiple',
       answer : [
         'Na',
