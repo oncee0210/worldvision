@@ -17,18 +17,14 @@ const quizPopData = {
       }
     },
     'step-7' : {
-      title : `문제. 철분의 원소기호는 무엇일까?`,
-      expl : `보건소 의사에게 철분제를 얻었다. <br/>철분의 원소기호를 맞춰 빈혈 증세가 있는 임산부에게 전달하자.`,
-      type : 'multiple',
-      answer : [
-        'Na',
-        'Fe',
-        'He'
-      ],
-      correct : 2,
+      title : `문제. 철의 원소기호와 원자번호를 쓰세요.`,
+      expl : `(대소문자 구분 필수. 예. 나트륨 = Na+11 = Na11)<br/>철분의 원소기호를 맞춰 빈혈 증세가 있는 임산부에게 전달하자.`,
+      type : 'word',
+      answer : '<input name="" id="" class="quiz-input" placeholder="정답을 입력하세요.">',
+      correct : 'Fe26',
       btn : `<button type="button" class="btn1 quiz-pop-button quiz-check-btn">정답 제출하기</button>`,
       check : {
-        expl : `Mission 해결 - 첫번째 코드 확보 [CITIZEN]<br/>다음 장소인 '출산을 앞둔 가정'으로 이동하자.`,
+        expl : `정답. Fe26<br/>해설. 철의 원소기호 Fe 원자번호는 26번이다.<br/>Mission 해결 - 첫번째 코드 확보 [CITIZEN]`,
         btn : `<button type="button" class="btn1 quiz-pop-button link-btn">마을로 나가기</button>`
       }
     }
@@ -47,20 +43,49 @@ const quizPopData = {
       }
     },
   },
+  'stage-4' : {
+    'step-4' : {
+      title : `암호를 찾아라!`,
+      expl : ` 'Stage4 암호표에서 MUAC을 암호화 한 값을 넣어보자.<br/>암호 입력은 대문자만 가능하다.`,
+      type : 'word',
+      answer : '<input name="" id="" class="quiz-input" placeholder="정답을 입력하세요.">',
+      correct : 'C2D5A1A3',
+      btn : `<button type="button" class="btn1 quiz-pop-button quiz-check-btn">정답 제출하기</button>`,
+      check : {
+        expl : `정답 : C2D5A1A3<br/>해설 : C2(M)D5(U)A1(A)A3(C) = C2D5A1A3`,
+        btn : `<button type="button" class="btn1 quiz-pop-button info-btn">둘레 측정하기</button>`
+      }
+    },
+    'step-6' : {
+      title : `암호를 찾아라!`,
+      expl : ` '1. 바나나(BANANA) 영어 스펠링을 숫자로 바꾸고 합을 구하세요.<br/>(바나나 영문 숫자는 Stage 3 암호표 참고)<br/>2. 바나나에 들어 있는 성분인 OO의 원자번호 찾으세요.<br/>3. 1번의 값과 2번의 값을 빼세요.`,
+      type : 'word',
+      answer : '<input name="" id="" class="quiz-input" placeholder="정답을 입력하세요.">',
+      correct : 14,
+      btn : `<button type="button" class="btn1 quiz-pop-button quiz-check-btn">정답 제출하기</button>`,
+      check : {
+        expl : `정답 : 14<br/>1. 바나나 영문 숫자의 합 : B(2)+A(1)+N(14)+A(1)+N(14)+A(1)=33<br/>2. 칼륨의 원소번호 : 19<br/>3. 33-19 = 14`,
+        btn : `<button type="button" class="btn1 quiz-pop-button info-btn">이유식 먹이기</button>`
+      }
+    },
+  },
   'stage-5' : {
     'step-1' : {
       title : `문제. 이 청소년이 가야할 곳은?`,
-      expl : `청소년 친화 보건시설의 약자`,
-      type : 'multiple',
-      answer : [
-        'AFET',
-        'AEHF',
-        'AFHF'
-      ],
-      correct : 3,
+      expl : `청소년 친화 보건시설의 약자 (Stage 5 암호표를 참고하세요.)
+      <div class="quiz-choice-etc5_1_wrap">
+        <div class="hansans quiz-choice-etc5_1"></div>
+        <div class="hansans quiz-choice-etc5_1"></div>
+        <div class="hansans quiz-choice-etc5_1"></div>
+        <div class="hansans quiz-choice-etc5_1"></div>
+      </div>
+      `,
+      type : 'word',
+      answer : `<input name="" id="" class="quiz-input" placeholder="정답을 입력하세요.">`,
+      correct : 'AFHF',
       btn : `<button type="button" class="btn1 quiz-pop-button quiz-check-btn">정답 제출하기</button>`,
       check : {
-        expl : `소녀와 함께 ‘청소년 친화 보건시설’로 이동하자!<br/>마을에서 청소년 친화 보건시설[AFHF]을 찾아보세요.`,
+        expl : `청소년 친화 보건시설(AFHF : Adolescent Friendly Health Facility)로 이동하자!<br/>마을에서 청소년 친화 보건시설[AFHF]을 찾아보세요.`,
         btn : `<button type="button" class="btn1 quiz-pop-button step-btn">마을로 돌아가기</button>`
       }
     },

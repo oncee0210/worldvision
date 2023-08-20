@@ -71,7 +71,7 @@ const infoPopData = {
     },
     'step-6' : {
       title : `미션 완료!`,
-      expl : `다행이도 아이가 잘 먹는다. 아이의 영양상태가 개선되었다!<br/>Mission 해결 - 세번째 코드 확보 [ACTION]<br/>마을에 '10대 임산부'가 있진 않은지 둘러보자!`,
+      expl : `다행히 아이가 잘 먹는다. 아이의 영양상태가 개선되었다!<br/>Mission 해결 - 세번째 코드 확보 [ACTION]<br/>마을로 나가 도움이 필요한 사람이 더 있는지 둘러보자!`,
       img : {
         size : [],
         imgFile : ``

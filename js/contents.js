@@ -91,11 +91,11 @@ window.onload = function() {
       }
     } else if(stage == "stage-4" && step == "step-4") {
       if(itemId == 'muac') {
-        $("#item-pop .item-pop-inner").append(`<button type="button" class="btn1 item-pop-button info-btn">진단하기</button>`);
+        $("#item-pop .item-pop-inner").append(`<button type="button" class="btn1 item-pop-button quiz-btn">진단하기</button>`);
       }
     } else if(stage == "stage-4" && step == "step-6") {
       if(itemId == 'babyfood') {
-        $("#item-pop .item-pop-inner").append(`<button type="button" class="btn1 item-pop-button info-btn">아이템 사용하기</button>`);
+        $("#item-pop .item-pop-inner").append(`<button type="button" class="btn1 item-pop-button quiz-btn">아이템 사용하기</button>`);
       }
     }
   });
