@@ -43,9 +43,9 @@ window.onload = function() {
     } else if(stage == 'stage-4' && step == 'step-5') {
       removeItem('muac');
     } else if(stage == 'stage-6') {
-      if(step == 'step-2' || step == 'step-3' || step == 'step-4' || step == 'step-5') {
+      if(step == 'step-2') {
         viewQuiz(stage, step);
-      } else if (step == 'step-6') {
+      } else if (step == 'step-3') {
         viewInfo(stage, step);
       }
     }
@@ -129,10 +129,6 @@ window.onload = function() {
       $(".info-pop-button").trigger('click');
     } else if(stage == "stage-5" && step == "step-5") {
       $(".info-pop-button").trigger('click');
-    } else if(stage == "stage-6" && step == "step-5") {
-      $(".info-pop-button").trigger('click');
-    } else if(stage == "stage-6" && step == "step-6") {
-      $(".info-pop-button").trigger('click');
     } else {
       closeInfo();
     }
@@ -168,13 +164,7 @@ window.onload = function() {
 
   const quizCloseBtn = '.quiz-pop-cancel';
   container.on('click', quizCloseBtn, function(){
-    if(stage == 'stage-6') {
-      if(step == 'step-2' || step == 'step-3' || step == 'step-4' || step == 'step-5') {
-        $("#quiz-pop .quiz-pop-button").trigger('click');
-      }
-    } else {
-      closeQuiz()
-    }
+    closeQuiz()
   });
 
   const quizCloseBtn_y = '#quiz-y-pop .quiz-pop-cancel';
@@ -183,10 +173,6 @@ window.onload = function() {
       $("#quiz-y-pop .quiz-pop-button").trigger('click');
     } else if(stage == "stage-5" && step == "step-1") {
       $("#quiz-y-pop .quiz-pop-button").trigger('click');
-    } else if(stage == 'stage-6') {
-      if(step == 'step-2' || step == 'step-3' || step == 'step-4' || step == 'step-5') {
-        $("#quiz-y-pop .quiz-pop-button").trigger('click');
-      }
     } else {
       closeQuiz_y();
     }
@@ -196,10 +182,6 @@ window.onload = function() {
   container.on('click', quizCloseBtn_n, function(){
     if(stage == "stage-3" && step == "step-7") {
       $("#quiz-n-pop .quiz-pop-button").trigger('click');
-    } else if(stage == 'stage-6') {
-      if(step == 'step-2' || step == 'step-3' || step == 'step-4' || step == 'step-5') {
-        $("#quiz-n-pop .quiz-pop-button").trigger('click');
-      }
     } else {
       closeQuiz_n();
     }

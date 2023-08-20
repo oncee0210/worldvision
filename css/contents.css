@@ -275,16 +275,10 @@
 
 #stage-6 #step-2 {background: url('/img/stage-6_step-1_bg.jpg') no-repeat center/contain;}
 
-#stage-6 #step-3 {background: url('/img/stage-6_step-1_bg.jpg') no-repeat center/contain;}
+#stage-6 #step-3 {background: url('/img/stage-6_step-6_bg.jpg') no-repeat center/contain;}
 
-#stage-6 #step-4 {background: url('/img/stage-6_step-1_bg.jpg') no-repeat center/contain;}
-
-#stage-6 #step-5 {background: url('/img/stage-6_step-1_bg.jpg') no-repeat center/contain;}
-
-#stage-6 #step-6 {background: url('/img/stage-6_step-6_bg.jpg') no-repeat center/contain;}
-
-#stage-6 #step-7 {background: url('/img/stage-6_step-7_bg.jpg') no-repeat center/contain;}
-#stage-6 #step-7 .board-btn {position: absolute; top: 206px; left: 346px; z-index: 5; width: 200px; height: 146px; background: url('/img/stage-6_step-7_board.png') no-repeat center/contain;}
+#stage-6 #step-4 {background: url('/img/stage-6_step-7_bg.jpg') no-repeat center/contain;}
+#stage-6 #step-4 .board-btn {position: absolute; top: 206px; left: 346px; z-index: 5; width: 200px; height: 146px; background: url('/img/stage-6_step-7_board.png') no-repeat center/contain;}
 
 /* Keyframes */
 @keyframes fadeOut {
