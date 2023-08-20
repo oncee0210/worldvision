@@ -43,7 +43,7 @@ export const itemData = {
   },
   'muac' : {
     title : 'MUAC테이프',
-    expl : '뮤악 MUAC (Mid Upper Arm Circumference)<br/>간단하게 아이의 팔 둘레를 측정해 영양실조 여부를 확인할 수 있다.',
+    expl : '팔둘레 측정 테이프 (MUAC, Mid Upper Arm Circumference)<br/>간단하게 아이의 팔 둘레를 측정해 영양실조 여부를 확인할 수 있다.',
     img : {
       inven : {
         imgSize : [86, 48],
