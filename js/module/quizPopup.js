@@ -72,7 +72,7 @@ const quizPopData = {
   'stage-5' : {
     'step-1' : {
       title : `문제. 이 청소년이 가야할 곳은?`,
-      expl : `청소년 친화 보건시설의 약자 (Stage 5 암호표를 참고하세요.)
+      expl : `청소년 친화 보건시설의 약자 (Stage 5 암호표를 참고하세요. 대문자만 가능하다.)
       <div class="quiz-choice-etc5_1_wrap">
         <div class="hansans quiz-choice-etc5_1"></div>
         <div class="hansans quiz-choice-etc5_1"></div>
