@@ -58,7 +58,7 @@ const quizPopData = {
     },
     'step-6' : {
       title : `암호를 찾아라!`,
-      expl : ` '1. 바나나(BANANA) 영어 스펠링을 숫자로 바꾸고 합을 구하세요.<br/>(바나나 영문 숫자는 Stage 3 암호표 참고)<br/>2. 바나나에 들어 있는 성분인 OO의 원자번호 찾으세요.<br/>3. 1번의 값과 2번의 값을 빼세요.`,
+      expl : `1. 바나나(BANANA) 영어 스펠링을 숫자로 바꾸고 합을 구하세요.<br/>(바나나 영문 숫자는 Stage 3 암호표 참고)<br/>2. 바나나에 들어 있는 성분인 OO의 원자번호 찾으세요.<br/>3. 1번의 값과 2번의 값을 빼세요.`,
       type : 'word',
       answer : '<input name="" id="" class="quiz-input" placeholder="정답을 입력하세요.">',
       correct : 14,
