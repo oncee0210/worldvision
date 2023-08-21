@@ -6,7 +6,30 @@ import { getItem, viewItem, closeItem, removeItem } from './module/item.js';
 import { viewInfo, closeInfo } from './module/infoPopup.js';
 import { viewQuiz, closeQuiz, checkQuiz, closeQuiz_y, closeQuiz_n } from './module/quizPopup.js';
 
+const userOs = navigator.userAgent.replace(/ /g, '').toLowerCase();
+console.log(userOs)
 window.onload = function() {
+  //font Mac, iOS error
+  if(userOs.match(/window/i) == "window") { //window
+    $(".btn1").css({'padding-top':'6px'});
+    $("#timer").css({'padding-top':'11px'});
+  } else if(userOs.match(/android/i) == "android") { //android
+    $(".btn1").css({'padding-top':'6px'});
+    $("#timer").css({'padding-top':'11px'});
+  } else if(userOs.match(/macintosh/i) == "macintosh") { //mac
+    $(".btn1").css({'padding-top':'0'});
+    $("#timer").css({'padding-top':'6px'});
+  } else if(userOs.match(/iphone/i) == "iphone") { //ios
+    $(".btn1").css({'padding-top':'0'});
+    $("#timer").css({'padding-top':'6px'});
+  } else if(userOs.match(/ipad/i) == "ipad") { //ipad
+    $(".btn1").css({'padding-top':'0'});
+    $("#timer").css({'padding-top':'6px'});
+  } else {
+    $(".btn1").css({'padding-top':'6px'});
+    $("#timer").css({'padding-top':'11px'});
+  }
+
   const container = $("#container");
 
   //Current Stage & Step
