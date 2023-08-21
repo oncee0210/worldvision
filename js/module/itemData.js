@@ -1,7 +1,7 @@
 export const itemData = {
   'hat' : {
     title : '보건요원용 모자',
-    expl : '비사야 지역의 뜨거운 태양을 막아줄 수 있다.',
+    expl : '동부 비사야 지역의 뜨거운 태양을 막아줄 수 있다.',
     img : {
       inven : {
         imgSize : [92, 46],
@@ -43,7 +43,7 @@ export const itemData = {
   },
   'muac' : {
     title : 'MUAC테이프',
-    expl : '간단하게 아이의 팔 둘레를 측정해 영양실조 여부를 확인할 수 있다.',
+    expl : '팔둘레 측정 테이프 (MUAC, Mid Upper Arm Circumference)<br/>간단하게 아이의 팔 둘레를 측정해 영양실조 여부를 확인할 수 있다.',
     img : {
       inven : {
         imgSize : [86, 48],
@@ -56,8 +56,8 @@ export const itemData = {
     }
   },
   'fe' : {
-    title : '[Fe]',
-    expl : '인체에 부족한 철분을 보충해 주는 약제. 빈혈에 도움을 준다.',
+    title : '철분제',
+    expl : '인체에 부족한 철분을 보충해 주는 약제로 만들어진 철분약. <br/>빈혈에 도움을 준다. 원소주기율표에 원소기호는 ?? 이다.',
     img : {
       inven : {
         imgSize : [24, 40],

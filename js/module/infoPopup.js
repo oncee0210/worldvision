@@ -71,7 +71,7 @@ const infoPopData = {
     },
     'step-6' : {
       title : `미션 완료!`,
-      expl : `다행이도 아이가 잘 먹는다. 아이의 영양상태가 개선되었다!<br/>Mission 해결 - 세번째 코드 확보 [ACTION]<br/>마을에 '10대 임산부'가 있진 않은지 둘러보자!`,
+      expl : `다행히 아이가 잘 먹는다. 아이의 영양상태가 개선되었다!<br/>Mission 해결 - 세번째 코드 확보 [ACTION]<br/>마을로 나가 도움이 필요한 사람이 더 있는지 둘러보자!`,
       img : {
         size : [],
         imgFile : ``
@@ -93,14 +93,14 @@ const infoPopData = {
   'stage-6' : {
     'step-1' : {
       title : `CVA 활동장소 입장하기`,
-      expl : `CVA 활동장소에 들어가려면 월드비전 보건요원임을 인증해야해요.<br/>4개의 퀴즈를 맞추면 보건요원임을 인증할 수 있어요.`,
+      expl : `CVA 활동장소에 들어가려면 월드비전 보건요원임을 인증해야해요.<br/>퀴즈를 맞추면 보건요원임을 인증할 수 있어요.`,
       img : {
         size : [],
         imgFile : ``
       },
       btn : `<button type="button" class="btn1 info-pop-button step-btn">퀴즈 시작하기</button>`
     },
-    'step-6' : {
+    'step-3' : {
       title : `축하합니다!`,
       expl : `모든 보건요원 활동을 무사히 마쳤습니다.<br/>CVA 활동장소에서 오늘 활동에 대한 의견을 남겨보세요.`,
       img : {

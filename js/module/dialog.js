@@ -5,7 +5,7 @@ const dialogData = {
 			msg : [
         {
           type : 'notice',
-          text1 : '트레이닝 센터를 찾아 당신이 보건요원이 되는 것을 도와줄 보건전문가를 찾아보세요.'
+          text1 : '트레이닝 센터를 찾아 당신의 보건요원 활동을 도와줄 선배 보건요원을 찾아보세요.'
         }
       ]
 		},
@@ -13,7 +13,7 @@ const dialogData = {
 			msg : [
         {
           type : 'notice',
-          text1 : '트레이닝 센터에 들어왔습니다. 보건전문가를 찾아 말을 걸어 보세요.'
+          text1 : '트레이닝 센터에 들어왔습니다. 선배 보건요원을 찾아 말을 걸어 보세요.'
         }
       ]
 		},
@@ -21,14 +21,14 @@ const dialogData = {
 			msg : [
 				{
           type : 'talk',
-					text1 : '[ 보건전문가 ]',
+					text1 : '[ 선배 보건요원 ]',
 					text2 : '안녕하세요. 보건요원님.<br/>월드비전은 이곳에서 임산부와 출산한 여성들 그리고 아이들을 돕는 모자보건 사업을 펼치고 있어요.<br/>보건요원은 도움이 필요한 가정에 방문해 필요한 지원을 하게 돼요.',
 					prev : '',
 					next : '<button type="button" class="dialog-arrow-next dialog-next">다음으로&nbsp;&nbsp;&gt;</button>'
 				},
         {
           type : 'talk',
-					text1 : '[ 보건전문가 ]',
+					text1 : '[ 선배 보건요원 ]',
 					text2 : '보건요원으로 활동할 때 몇가지 아이템들이 필요할 거에요.<br/>아이템은 이곳 트레이닝 센터에 구비되어 있으니 모두 챙겨서 나가도록 해요.',
 					prev : `<button type="button" class="dialog-arrow-prev dialog-prev">&lt;&nbsp;&nbsp;이전으로</button>`,
 					next : `<button type="button" class="dialog-arrow-next step-btn">다음으로&nbsp;&nbsp;&gt;</button>`
@@ -91,7 +91,7 @@ const dialogData = {
         {
           type : 'talk',
           text1 : '[ 보건요원 ]',
-          text2 : '의사선생님. 임산부에게 필요한 철분제좀 주세요.',
+          text2 : '의사선생님, 임산부가 어지러워해요. <br/>철분제가 필요합니다. ',
           prev : ``,
           next : `<button type="button" class="dialog-arrow-next dialog-next">다음으로&nbsp;&nbsp;&gt;</button>`
         },
@@ -160,14 +160,14 @@ const dialogData = {
         {
           type : 'talk',
           text1 : '[ 보건소 직원 ]',
-          text2 : '안녕. 나는 보건소 직원이야. <br/>산모를 씨앰뷸런스로 안전하게 이동하고 싶다고. 알겠어. <br/>근데 보트바우처는 갖고 있지? 보트바우처의 인증번호를 알려줘.',
+          text2 : '저는 보건소 직원이에요. <br/>산모를 씨앰뷸런스로 안전하게 이동하고 싶다고요?<br/>알겠습니다. 그런데 보트 바우처는 가지고 오셨죠? 인증번호를 알려주세요.',
           prev : ``,
           next : `<button type="button" class="dialog-arrow-next dialog-next">다음으로&nbsp;&nbsp;&gt;</button>`
         },
         {
           type : 'talk',
           text1 : '[ 보건소 직원 ]',
-          text2 : `그게 뭔지 잘 모르겠다고? <br/>'보트바우처'라는 단어의 초성을 활동지 암호표에서 숫자로 바꿔봐. <br/>그리고 그 숫자들의 합을 모두 더하면 정답이야.`,
+          text2 : `그게 뭔지 모르겠다고요? <br/>‘보트바우처’라는 단어의 초성을 활동지 암호표에서 숫자로 바꿔보세요. <br/>그리고 그 숫자의 합을 모두 더하면 정답이에요.`,
           prev : `<button type="button" class="dialog-arrow-prev dialog-prev">&lt;&nbsp;&nbsp;이전으로</button>`,
           next : '<button type="button" class="dialog-arrow-next quiz-btn">다음으로&nbsp;&nbsp;&gt;</button>'
         },
@@ -184,7 +184,7 @@ const dialogData = {
 			msg : [
         {
           type : 'notice',
-          text1 : '출산을 앞둔 가정에 방문했습니다. 도움이 필요한 산모를 찾아 말을 걸어 보세요.'
+          text1 : '출산을 앞둔 가정에 다시 돌아왔습니다. 도움이 필요한 산모를 어서 도와주세요.'
         }
       ]
 		},
@@ -277,21 +277,21 @@ const dialogData = {
         {
           type : 'talk',
           text1 : '[ 보건요원 ]',
-          text2 : '(10대 소녀인데 임신상태인 것 같다.)',
+          text2 : '(10대 소녀인데, 힘들어보인다)',
           prev : ``,
           next : `<button type="button" class="dialog-arrow-next dialog-next">다음으로&nbsp;&nbsp;&gt;</button>`
         },
         {
           type : 'talk',
           text1 : '[ 보건요원 ]',
-          text2 : '안녕. 나는 월드비전 보건요원이야.<br/>힘들어보이는데, 괜찮니? 혹시 임신했으면 내가 도와줄 수 있어.',
+          text2 : '안녕. 나는 월드비전 보건요원이야.<br/>힘들어보이는데, 괜찮니?',
           prev : `<button type="button" class="dialog-arrow-prev dialog-prev">&lt;&nbsp;&nbsp;이전으로</button>`,
           next : `<button type="button" class="dialog-arrow-next dialog-next">다음으로&nbsp;&nbsp;&gt;</button>`
         },
         {
           type : 'talk',
           text1 : '[ 10대 임산부 ]',
-          text2 : '안녕... 하세요.<br/>맞아요. 얼마전에 제가 임신한 사실을 알게 되었어요,',
+          text2 : '안녕... 하세요.<br/>맞아요. 얼마전에 제가 임신한 사실을 알게 되었어요.',
           prev : `<button type="button" class="dialog-arrow-prev dialog-prev">&lt;&nbsp;&nbsp;이전으로</button>`,
           next : `<button type="button" class="dialog-arrow-next dialog-next">다음으로&nbsp;&nbsp;&gt;</button>`
         },
@@ -305,7 +305,7 @@ const dialogData = {
         {
           type : 'talk',
           text1 : '[ 보건요원 ]',
-          text2 : '걱정하지마. 너를 도와줄 수 있는 청소년 보건 친화 시설을 소개해줄게.',
+          text2 : '걱정하지마. 너를 도와줄 수 있는 청소년 친화 보건시설을 소개해줄게.',
           prev : `<button type="button" class="dialog-arrow-prev dialog-prev">&lt;&nbsp;&nbsp;이전으로</button>`,
           next : `<button type="button" class="dialog-arrow-next quiz-btn">다음으로&nbsp;&nbsp;&gt;</button>`
         }
@@ -315,7 +315,7 @@ const dialogData = {
       msg : [
         {
           type : 'notice',
-          text1 : '보건소에 들어왔습니다. 의사를 찾아 말을 걸어보세요.'
+          text1 : '청소년 친화 보건시설에 들어왔습니다. 의사를 찾아 말을 걸어보세요.'
         }
       ]
     },

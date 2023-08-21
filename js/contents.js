@@ -6,7 +6,30 @@ import { getItem, viewItem, closeItem, removeItem } from './module/item.js';
 import { viewInfo, closeInfo } from './module/infoPopup.js';
 import { viewQuiz, closeQuiz, checkQuiz, closeQuiz_y, closeQuiz_n } from './module/quizPopup.js';
 
+const userOs = navigator.userAgent.replace(/ /g, '').toLowerCase();
+console.log(userOs)
 window.onload = function() {
+  //font Mac, iOS error
+  if(userOs.match(/window/i) == "window") { //window
+    $(".btn1").css({'padding-top':'6px'});
+    $("#timer").css({'padding-top':'11px'});
+  } else if(userOs.match(/android/i) == "android") { //android
+    $(".btn1").css({'padding-top':'6px'});
+    $("#timer").css({'padding-top':'11px'});
+  } else if(userOs.match(/macintosh/i) == "macintosh") { //mac
+    $(".btn1").css({'padding-top':'0'});
+    $("#timer").css({'padding-top':'6px'});
+  } else if(userOs.match(/iphone/i) == "iphone") { //ios
+    $(".btn1").css({'padding-top':'0'});
+    $("#timer").css({'padding-top':'6px'});
+  } else if(userOs.match(/ipad/i) == "ipad") { //ipad
+    $(".btn1").css({'padding-top':'0'});
+    $("#timer").css({'padding-top':'6px'});
+  } else {
+    $(".btn1").css({'padding-top':'6px'});
+    $("#timer").css({'padding-top':'11px'});
+  }
+
   const container = $("#container");
 
   //Current Stage & Step
@@ -38,12 +61,14 @@ window.onload = function() {
 
     if(stage == 'stage-3' && step == 'step-8') {
       getItem('boat');
+    } else if(stage == 'stage-4' && step == 'step-2') {
+      getItem('muac');
     } else if(stage == 'stage-4' && step == 'step-5') {
-      removeItem('muac')
+      removeItem('muac');
     } else if(stage == 'stage-6') {
-      if(step == 'step-2' || step == 'step-3' || step == 'step-4' || step == 'step-5') {
-        viewQuiz(stage, step)
-      } else if (step == 'step-6') {
+      if(step == 'step-2') {
+        viewQuiz(stage, step);
+      } else if (step == 'step-3') {
         viewInfo(stage, step);
       }
     }
@@ -89,11 +114,11 @@ window.onload = function() {
       }
     } else if(stage == "stage-4" && step == "step-4") {
       if(itemId == 'muac') {
-        $("#item-pop .item-pop-inner").append(`<button type="button" class="btn1 item-pop-button info-btn">아이템 사용하기</button>`);
+        $("#item-pop .item-pop-inner").append(`<button type="button" class="btn1 item-pop-button quiz-btn">진단하기</button>`);
       }
     } else if(stage == "stage-4" && step == "step-6") {
       if(itemId == 'babyfood') {
-        $("#item-pop .item-pop-inner").append(`<button type="button" class="btn1 item-pop-button info-btn">아이템 사용하기</button>`);
+        $("#item-pop .item-pop-inner").append(`<button type="button" class="btn1 item-pop-button quiz-btn">아이템 사용하기</button>`);
       }
     }
   });
@@ -126,10 +151,6 @@ window.onload = function() {
     } else if(stage == "stage-4" && step == "step-6") {
       $(".info-pop-button").trigger('click');
     } else if(stage == "stage-5" && step == "step-5") {
-      $(".info-pop-button").trigger('click');
-    } else if(stage == "stage-6" && step == "step-5") {
-      $(".info-pop-button").trigger('click');
-    } else if(stage == "stage-6" && step == "step-6") {
       $(".info-pop-button").trigger('click');
     } else {
       closeInfo();
@@ -166,13 +187,7 @@ window.onload = function() {
 
   const quizCloseBtn = '.quiz-pop-cancel';
   container.on('click', quizCloseBtn, function(){
-    if(stage == 'stage-6') {
-      if(step == 'step-2' || step == 'step-3' || step == 'step-4' || step == 'step-5') {
-        $("#quiz-pop .quiz-pop-button").trigger('click');
-      }
-    } else {
-      closeQuiz()
-    }
+    closeQuiz()
   });
 
   const quizCloseBtn_y = '#quiz-y-pop .quiz-pop-cancel';
@@ -181,10 +196,6 @@ window.onload = function() {
       $("#quiz-y-pop .quiz-pop-button").trigger('click');
     } else if(stage == "stage-5" && step == "step-1") {
       $("#quiz-y-pop .quiz-pop-button").trigger('click');
-    } else if(stage == 'stage-6') {
-      if(step == 'step-2' || step == 'step-3' || step == 'step-4' || step == 'step-5') {
-        $("#quiz-y-pop .quiz-pop-button").trigger('click');
-      }
     } else {
       closeQuiz_y();
     }
@@ -194,10 +205,6 @@ window.onload = function() {
   container.on('click', quizCloseBtn_n, function(){
     if(stage == "stage-3" && step == "step-7") {
       $("#quiz-n-pop .quiz-pop-button").trigger('click');
-    } else if(stage == 'stage-6') {
-      if(step == 'step-2' || step == 'step-3' || step == 'step-4' || step == 'step-5') {
-        $("#quiz-n-pop .quiz-pop-button").trigger('click');
-      }
     } else {
       closeQuiz_n();
     }
@@ -208,10 +215,6 @@ window.onload = function() {
     $("#quiz-pop").fadeIn(200);
     $("#quiz-n-pop").hide();
   });
-
-  if(stage == 'stage-2' || stage == 'stage-3' || stage == 'stage-4'){
-    getItem('muac');
-  }
 
   //공통상단 마을지도
   $("#map-btn").on('click', function(){
